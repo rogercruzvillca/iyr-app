@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "f927f6e8-f71c-457f-9539-8b5725e3462a"
+    "analytics": "0e17ed39-5c75-45ff-8c34-1216f4a9da31"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "IyR": {
+    "iyr-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/IyR",
+            "outputPath": "dist/iyr-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "IyR:build:production"
+              "browserTarget": "iyr-app:build:production"
             },
             "development": {
-              "browserTarget": "IyR:build:development"
+              "browserTarget": "iyr-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "IyR:build"
+            "browserTarget": "iyr-app:build"
           }
         },
         "test": {
@@ -106,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "IyR"
+  "defaultProject": "iyr-app"
 }

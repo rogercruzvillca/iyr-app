@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AniversariosComponent } from './pages/aniversarios/aniversarios.component';
+import { ContentComponent } from './pages/commons/content/content.component';
 import { MenuComponent } from './pages/commons/menu/menu.component';
 import { HomeComponent } from './pages/home/home.component';
 import { IdaniaComponent } from './pages/idania/idania.component';
-import { ContentComponent } from './pages/commons/content/content.component';
-import { AniversariosComponent } from './pages/aniversarios/aniversarios.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +16,10 @@ import { AniversariosComponent } from './pages/aniversarios/aniversarios.compone
     HomeComponent,
     IdaniaComponent,
     ContentComponent,
-    AniversariosComponent
+    AniversariosComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
