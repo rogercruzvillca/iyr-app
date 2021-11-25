@@ -8,6 +8,7 @@ import { ContentComponent } from './pages/commons/content/content.component';
 import { MenuComponent } from './pages/commons/menu/menu.component';
 import { HomeComponent } from './pages/home/home.component';
 import { IdaniaComponent } from './pages/idania/idania.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { IdaniaComponent } from './pages/idania/idania.component';
     ContentComponent,
     AniversariosComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, YouTubePlayerModule],
   providers: [],
   bootstrap: [AppComponent],
 })
